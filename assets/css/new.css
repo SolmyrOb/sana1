@@ -31,42 +31,7 @@
   border-color: var(--red);
 }
 
-.faq-item_question {
-  background: var(--black);
-  border: 1px solid var(--gray);
-}
 
-.faq-item_marker {
-  background: transparent;
-  border: 2px solid var(--green);
-  position: relative;
-}
-
-.faq-item_marker::before,
-.faq-item_marker::after {
-  content: '';
-  position: absolute;
-  background: var(--green);
-}
-
-.faq-item_marker::before {
-  width: 16px;
-  height: 2px;
-}
-
-.faq-item_marker::after {
-  width: 2px;
-  height: 16px;
-}
-
-[open] .faq-item_marker::after {
-  display: none;
-}
-
-.faq-item_answer {
-  background: var(--dark-gray);
-  border-left: 2px solid var(--green);
-}
 .pagination {
   color: var(--light-gray);
 }
@@ -154,3 +119,4 @@
 .our-heroes .heroes-content {
   background: linear-gradient(135deg, var(--dark-gray), var(--black));
 }
+
