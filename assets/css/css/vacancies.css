@@ -1,0 +1,134 @@
+.top {
+  margin: 30px 0 60px 0;
+}
+.top_title {
+  margin: 50px 0 0 0;
+  font-size: clamp(24px, calc(10px + 3.5vw), 66px);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.vacancies-group-list {
+  margin: 60px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.vacancies-group {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: white;
+  border: 1px solid #656565;
+  padding: 0.75em;
+  background: var(--dark-gray);
+  line-height: 1em;
+}
+.vacancies-group.active {
+  background: var(--red);
+}
+.vacancies .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+.cta {
+  margin: 30px 0 0 0;
+}
+.advantages_txt {
+  margin: 20px 0 0 0;
+  color: var(--gray);
+  font-size: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.2em;
+}
+.advantages_list {
+  margin: 60px 0 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
+  gap: 30px;
+}
+.advantage-card {
+  border: 1px solid #656565;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+  &:before {
+    content: '';
+    width: 26px;
+    height: 26px;
+    background:
+      radial-gradient(
+        circle at 50%,
+        var(--red) 1px,
+        var(--black) 2px,
+        var(--black) 4px,
+        transparent 4px
+      ),
+      linear-gradient(to right, transparent 9px, transparent 16px),
+      linear-gradient(to right, transparent 12px, white 13px, transparent 14px),
+      linear-gradient(to bottom, transparent 12px, white 13px, transparent 14px);
+  }
+}
+.advantage-card_title {
+  margin: auto 0 0 0;
+  color: #c5c5c5;
+  font-size: 16px;
+  line-height: 1.3em;
+  strong,
+  b {
+    color: white;
+  }
+}
+.advantage-card_txt {
+  margin: 10px 0 0 0;
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1em;
+}
+.faq_list {
+  margin: 50px 0 0 0;
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 20px;
+}
+.txt_content {
+  font-size: 18px;
+  padding: 20px;
+  border: 1px solid #656565;
+  line-height: 1.5em;
+  color: #b4b4b4;
+  p {
+    margin: 1em 0;
+  }
+}
+.show-txt {
+  background: transparent;
+  font-weight: 500;
+  padding: 25px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #656565;
+  border-top: none;
+  width: 100%;
+  color: white;
+  &:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    translate: -17% 0;
+    rotate: 45deg;
+  }
+}
+@media (max-width: 1024px) {
+  .vacancies .container {
+    grid-template-columns: 100%;
+  }
+  .advantage-card_title {
+    margin-top: 10px;
+  }
+}

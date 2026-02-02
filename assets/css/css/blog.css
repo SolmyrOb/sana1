@@ -1,0 +1,101 @@
+.top{
+    background: url('../images/main-bg.png') center/cover;
+    border-bottom: 1px solid #4F4F4F;
+}
+.top .container{
+    padding: 25px 0 40px 0;
+    display: grid;
+}
+.top_title{
+    font-size: clamp(24px, calc(15px + 2vw), 44px);
+    font-weight: 700;
+    margin: 120px 0 0 0;
+    text-transform: uppercase;
+}
+
+.articles_grid{
+    margin: 60px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.subscribe .container{
+    background: var(--green);
+    color: white;
+    display: grid;
+    padding: 55px;
+    grid-template-columns: 1fr 365px;
+    align-items: flex-start;
+}
+.subscribe_title{
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    max-width: 420px;
+}
+.subscribe_form{
+    padding: 0 0 0 30px;
+    border-left: 1px solid #B4B4B4;
+}
+.subscribe_form-input-wrapper{
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 20px;
+}
+.subscribe_form-input-label{
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #C8C8C8;
+}
+.subscribe_form-input{
+    border: none;
+    border-bottom: 1px solid #B4B4B4;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 0;
+    background: transparent;
+    color: white;
+}
+.subscribe_form-input::placeholder{
+    color: #C8C8C8;
+}
+.subscribe_form-send{
+    background: linear-gradient(to bottom, transparent, transparent 8px, black 8px, black calc(100% - 8px), transparent calc(100% - 8px)),
+    linear-gradient(to right, transparent, transparent 8px, black 8px, black calc(100% - 8px), transparent calc(100% - 8px)),
+    white;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 1.3em 3.3em;
+    margin: 30px 0 0 0;
+    border: none;
+}
+
+@media (max-width: 1024px){
+    .subscribe .container{
+        grid-template-columns: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .subscribe_title{
+        font-size: 24px;
+    }
+    .subscribe_form{
+        padding: 0;
+        border-left: none;
+        margin: 25px 0 0 0;
+    }
+    .subscribe_form-input-wrapper{
+        gap: 15px;
+    }
+    .subscribe_form-send{
+        font-size: 14px;
+    }
+}
+@media (max-width: 576px){
+    .subscribe .container{
+        width: calc(100% - 24px);
+    }
+}
