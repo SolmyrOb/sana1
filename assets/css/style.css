@@ -1956,7 +1956,7 @@ header .navbar .nav-item .nav-link:hover::after {
 /* Если ты готов пойти на службу и защитить Родину, заполни форму */
 
 .form-sec .form-rov {
-  background: var(--green);
+  background: var(--gray);
   padding: 58px 58px 68px;
 }
 
